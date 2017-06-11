@@ -1,1 +1,4 @@
 # FlowLayoutCollectionView
+
+kazuhiro4949さんのQiitaの記事を見て実際にCollectionViewを使ってタグを並べる実装をしてみる。
+参考元：http://qiita.com/kazuhiro4949/items/03bc3d17d3826aa197c0
