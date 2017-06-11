@@ -13,6 +13,8 @@
 		2C8D24351EED0F42003A96E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C8D24341EED0F42003A96E2 /* Assets.xcassets */; };
 		2C8D24381EED0F42003A96E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8D24361EED0F42003A96E2 /* LaunchScreen.storyboard */; };
 		2C8D24401EED27B1003A96E2 /* CollectionViewFlowLayoutLeftAlign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D243F1EED27B1003A96E2 /* CollectionViewFlowLayoutLeftAlign.swift */; };
+		2C8D24431EED9B0B003A96E2 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D24411EED9B0B003A96E2 /* CustomCell.swift */; };
+		2C8D24441EED9B0B003A96E2 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8D24421EED9B0B003A96E2 /* CustomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		2C8D24371EED0F42003A96E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C8D24391EED0F42003A96E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C8D243F1EED27B1003A96E2 /* CollectionViewFlowLayoutLeftAlign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewFlowLayoutLeftAlign.swift; sourceTree = "<group>"; };
+		2C8D24411EED9B0B003A96E2 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		2C8D24421EED9B0B003A96E2 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				2C8D242D1EED0F42003A96E2 /* AppDelegate.swift */,
 				2C8D242F1EED0F42003A96E2 /* ViewController.swift */,
 				2C8D243F1EED27B1003A96E2 /* CollectionViewFlowLayoutLeftAlign.swift */,
+				2C8D24411EED9B0B003A96E2 /* CustomCell.swift */,
+				2C8D24421EED9B0B003A96E2 /* CustomCell.xib */,
 				2C8D24311EED0F42003A96E2 /* Main.storyboard */,
 				2C8D24341EED0F42003A96E2 /* Assets.xcassets */,
 				2C8D24361EED0F42003A96E2 /* LaunchScreen.storyboard */,
@@ -129,6 +135,7 @@
 			files = (
 				2C8D24381EED0F42003A96E2 /* LaunchScreen.storyboard in Resources */,
 				2C8D24351EED0F42003A96E2 /* Assets.xcassets in Resources */,
+				2C8D24441EED9B0B003A96E2 /* CustomCell.xib in Resources */,
 				2C8D24331EED0F42003A96E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +149,7 @@
 			files = (
 				2C8D24401EED27B1003A96E2 /* CollectionViewFlowLayoutLeftAlign.swift in Sources */,
 				2C8D24301EED0F42003A96E2 /* ViewController.swift in Sources */,
+				2C8D24431EED9B0B003A96E2 /* CustomCell.swift in Sources */,
 				2C8D242E1EED0F42003A96E2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

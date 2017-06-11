@@ -15,6 +15,7 @@ class ViewController: UIViewController, UICollectionViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collectionView.dataSource = self
+        collectionView.register(UINib(nibName: "CustomCell", bundle: nil), forCellWithReuseIdentifier: "CustomCell")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -28,8 +29,9 @@ class ViewController: UIViewController, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCell", for: indexPath) as! CustomCell
         cell.backgroundColor = UIColor.brown
+        cell.label.text = String(indexPath.row)
         
         return cell
     }
