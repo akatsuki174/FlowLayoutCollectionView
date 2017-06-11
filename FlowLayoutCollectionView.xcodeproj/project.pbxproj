@@ -58,11 +58,11 @@
 			children = (
 				2C8D242D1EED0F42003A96E2 /* AppDelegate.swift */,
 				2C8D242F1EED0F42003A96E2 /* ViewController.swift */,
+				2C8D243F1EED27B1003A96E2 /* CollectionViewFlowLayoutLeftAlign.swift */,
 				2C8D24311EED0F42003A96E2 /* Main.storyboard */,
 				2C8D24341EED0F42003A96E2 /* Assets.xcassets */,
 				2C8D24361EED0F42003A96E2 /* LaunchScreen.storyboard */,
 				2C8D24391EED0F42003A96E2 /* Info.plist */,
-				2C8D243F1EED27B1003A96E2 /* CollectionViewFlowLayoutLeftAlign.swift */,
 			);
 			path = FlowLayoutCollectionView;
 			sourceTree = "<group>";
