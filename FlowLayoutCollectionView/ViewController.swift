@@ -17,6 +17,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         super.viewDidLoad()
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
+        if let layout = self.collectionView.collectionViewLayout as? CollectionViewFlowLayoutLeftAlign {
+            layout.estimatedItemSize = CGSize(width: 1, height: 1)
+        }
         collectionView.register(UINib(nibName: "CustomCell", bundle: nil), forCellWithReuseIdentifier: "CustomCell")
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -36,6 +39,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         cell.label.text = items[Int(arc4random_uniform(5))]
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if let cell = CustomCell.fromNib() {
+            cell.contentView.systemLayoutSizeFitting(UILayoutFittingCompressedSize)
+        }
+        
+        return CGSize.zero
     }
 }
 

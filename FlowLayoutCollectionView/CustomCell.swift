@@ -14,7 +14,19 @@ class CustomCell: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        label.preferredMaxLayoutWidth = 250
+    }
+    
+    class func fromNib() -> CustomCell?
+    {
+        var cell: CustomCell?
+        let nibViews = Bundle.main.loadNibNamed("CustomCell", owner: nil, options: nil)
+        for nibView in nibViews! {
+            if let cellView = nibView as? CustomCell {
+                cell = cellView
+            }
+        }
+        return cell
     }
 
 }
