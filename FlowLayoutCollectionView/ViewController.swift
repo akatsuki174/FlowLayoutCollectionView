@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDataSource {
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    let items = ["aaaaaaa", "bb", "cccccccccccccc", "ddd", "eeeeeeeeeeeeeeeeeeeee"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collectionView.dataSource = self
+        self.collectionView.delegate = self
         collectionView.register(UINib(nibName: "CustomCell", bundle: nil), forCellWithReuseIdentifier: "CustomCell")
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -31,7 +33,7 @@ class ViewController: UIViewController, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCell", for: indexPath) as! CustomCell
         cell.backgroundColor = UIColor.brown
-        cell.label.text = String(indexPath.row)
+        cell.label.text = items[Int(arc4random_uniform(5))]
         
         return cell
     }
